@@ -1,0 +1,7 @@
+- npm install --yes
+- npm install express mongoose ejs morgan
+- npm install nodemon
+
+
+
+
