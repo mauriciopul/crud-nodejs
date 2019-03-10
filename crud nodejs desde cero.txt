@@ -5,4 +5,5 @@ npm install nodemon
 - Crear carpeta src y dentro crear archivo app.js
 - configurar nodemon en el package.json
 - En la raiz crear carpetas models, views, routes
+- Se crea la conexión con la base de datos
 
