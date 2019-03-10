@@ -1,7 +1,8 @@
-- npm install --yes
-- npm install express mongoose ejs morgan
-- npm install nodemon
+npm install --yes
+npm install express mongoose ejs morgan
+npm install nodemon
 
-
+- Crear carpeta src y dentro crear archivo app.js
+- configurar nodemon en el package.json
 
 
