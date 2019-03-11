@@ -29,10 +29,16 @@ router.get('/convertir/:id', async (req, res) => {
 router.get('/editar/:id', async (req,res) =>{
     const { id } = req.params;
     const tarea = await Tarea.findById(id);
-    res.render('edit')
-    
+    res.render('edit',{
+        tarea
+    })    
 })
 
+router.post('/actualizar/:id', async (req, res)=>{
+    const { id } = req.params;
+    await Tarea.update({_id: id}, req.body);
+    res.redirect('/');
+});
 
 
 router.get('/delete/:id', async (req, res)=>{
