@@ -12,7 +12,7 @@ COMANDOS PARA VER EN MONGODB SI HAY DATOS
 - En un shell cualquiera escribir 'mongo', luego...
 - use crud-mongo (La base de datos se llama 'crud-mongo')
 - show tareas (la coleccion se llama 'tareas')
-- db.tareas.found()
+- db.tareas.find().pretty()
 
 
 

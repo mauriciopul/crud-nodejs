@@ -12,7 +12,7 @@
                             <input type="text" name="titulo" placeholder="Inserte un título" class="form-control">
                         </div>
                         <div class="form-group">
-                            <textarea name="descripcion"  cols="80" class="form-control" placeholder="Inserte una descripción"></textarea>
+                            <textarea name="descripcion" cols="80" class="form-control" placeholder="Inserte una descripción"></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary btn-block">
                             Agregar
@@ -36,10 +36,30 @@
                 </thead>
                 <tbody>
 
+                    <% for (var i = 0; i < tareas.length; i++) { %>
+                    <tr>
+                        <td>
+                            <%= i + 1%>
+                        </td>
+                        <td>
+                            <%=  tareas[i].titulo%>
+                        </td>
+                        <td>
+                            <%=  tareas[i].descripcion%>
+                        </td>
+                        <td>
+                            <a href="/convertir/<%= tareas[i]._id %>" 
+                                class="btn <%= tareas[i].estado ? 'btn-success' : 'btn-dark' %>">
+                                Hecho
+                            </a>
+                            <a href="/delete/<%= tareas[i]._id %>" class="btn btn-danger">Eliminar</a>
+                            <a href="/editar/<%= tareas[i]._id %>" 
+                                class="btn btn-info">Editar</a>
+                        </td>
+                    </tr>
+                    <% }%>
                 </tbody>
-
             </table>
-
         </div>
     </div>
 </div>
