@@ -7,3 +7,24 @@ npm install nodemon
 - En la raiz crear carpetas models, views, routes
 - Se crea la conexión con la base de datos
 
+
+COMANDOS PARA VER EN MONGODB SI HAY DATOS
+- En un shell cualquiera escribir 'mongo', luego...
+- use crud-mongo (La base de datos se llama 'crud-mongo')
+- show tareas (la coleccion se llama 'tareas')
+- db.tareas.found()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
