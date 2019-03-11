@@ -11,7 +11,6 @@ mongoose.connect('mongodb://localhost/crud-mongo')
     .catch(err => console.log(err));
 
 
-
 //importar rutas
 const indexRoutes = require('./routes/index');
 
