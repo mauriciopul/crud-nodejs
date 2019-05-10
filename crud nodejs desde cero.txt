@@ -14,7 +14,10 @@ COMANDOS PARA VER EN MONGODB SI HAY DATOS
 - show tareas (la coleccion se llama 'tareas')
 - db.tareas.find().pretty()
 
-
+EJECUTAR
+Desde consola ejecutar los siguientes comandos
+- mongod
+- npm start
 
 
 
