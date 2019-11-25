@@ -17,7 +17,7 @@ const indexRoutes = require('./routes/index');
 
 //configuraciones
 //Toma el puerto que asigna el S.O. si no esta libre entonces asigna el puerto 3000
-app.set('port', process.env.PORT || 3000); 
+app.set('port', process.env.PORT || 3001); 
 app.set('views', path.join(__dirname, 'views'));//el comando __dirname indica la ubicación actual de este archivo
 app.set ('view engine', 'ejs')
 
